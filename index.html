@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="myjs.js"></script>
 
     <title>Home | Pawsie</title>
 </head>
@@ -13,7 +15,12 @@
             <img src="images/logo.jfif">
         </figure>
         <h1>Pawsie</h1>
-        <nav>
+        <i id="menuicon" onclick="toggleNavDisplay()">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </i>
+        <nav id="myresponsivemenu">
             <a href="index.html">Home</a>
             <a href="adopt.html">Adopt</a>
             <a href="aboutus.html">About Us</a>
@@ -23,12 +30,22 @@
         </nav>
     </header>
     <main>
+        <section id="hero">
+            <h1>Welcome to Our Website</h1>
+            <p>
+            We sell stuff, or maybe we offer a service. Who knows. I'm your standard example site.
+            </p>
+            <div class ="buttongroup">
+                <a href="adopt.html">Adopt</a>
+                <a href="donate.html">Donate</a>    
+            </div>
+        </section>
         <section class="maincontent">
             <!-- VIDEO TO BE INCLUDED LATER -->
             <iframe width="560" height="315" src="https://www.youtube.com/embed/LIskxE9gWJ4?si=WYUTlUev3FibBppW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p>A high increase of pets put in shelters since the pandemic has been addressed.Pawsie's goal is to hopefully decrease that and find our pets its forever home. Pawsie is a non-profit organization teamed with the 11th Hour Rescue Center giving these animals a second chance at life.</p>
         </section>
-        <section>
+        <section class="maincontent">
             <h2>Why Adopt?</h2>
             <ul>
                 <li>You are saving a life.</li>  
@@ -45,7 +62,7 @@
             <h2>How to Adopt</h2>
             <!-- VIDEO TO BE INSERTED -->
             <iframe src="https://www.youtube.com/embed/OHsPcYXL2v4?modestbranding=1&amp;rel=0&amp;showinfo=0" frameborder="0" width="360" style="aspect-ratio: 9 / 16;"></iframe>
-            <ol>  
+            <ol class="maincontent">  
                 <li>Go to the adopt section.</li>
                 <li>Choose your new best friend.</li>
                 <li>Read about your new best friend.</li>
